@@ -1,0 +1,2 @@
+setCssToHead(["body .",[1],"content{ width:100%; height: 100vh; }\n.",[1],"history{ position: fixed; bottom: 0; height: 50px; }\n",],undefined,{path:"./pages/index/index.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/index/index.wxml') } }));

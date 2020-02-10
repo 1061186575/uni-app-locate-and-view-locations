@@ -1,0 +1,12 @@
+
+page .content{
+	width:100%;
+	height: 100vh;
+}
+.history{
+	position: fixed;
+	bottom: 0;
+	height: 50px;
+}
+
+

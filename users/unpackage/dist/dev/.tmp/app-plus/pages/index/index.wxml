@@ -1,0 +1,1 @@
+<view class="content"><web-view webview-styles="{{webviewStyles}}" src="http://jx.jzlemiao.cn/"></web-view><view class="history"><text data-event-opts="{{[['tap',[['e0',['$event']]]]]}}" bindtap="__e">返回</text><text data-event-opts="{{[['tap',[['e1',['$event']]]]]}}" bindtap="__e">前进</text></view></view>

@@ -1,0 +1,1 @@
+<view><block wx:for="{{websiteList}}" wx:for-item="d" wx:for-index="index" wx:key="index"><view><text data-event-opts="{{[['tap',[['updateHome',['$0'],[[['websiteList','',index,'src']]]]]]]}}" bindtap="__e">{{d.name}}</text></view></block></view>
