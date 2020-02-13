@@ -57,11 +57,17 @@ router.post('/changeHomePage', function (req, res){
     
     var fileDirName = path.join(root_dir_name,'data','homePage.json');
     
-    fs.writeFile(fileDirName, JSON.stringify({src}), function(err){
+    fs.readFile(fileDirName, function (err, content) {
         if (err) {console.log("err: ", err);return;}
-        res.send('ok changeHomePage')
+        content = JSON.parse(content.toString())
+        content.homePage = src
+        
+        fs.writeFile(fileDirName, JSON.stringify(content), function(err){
+	        if (err) {console.log("err: ", err);return;}
+	        res.send('ok changeHomePage')
+	    })
     })
-
+    
 
 })
 
